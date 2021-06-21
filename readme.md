@@ -8,6 +8,10 @@
 
 ### Hodrick-Prescott Filter
 - Imported from the statsmodel library, we utilize the Hodrick-Prescott (HP) filter to separate the time series into two components:  trend and noise.   
+- The visual separation is below:
+
+![Price_Trend](Price_vs._Trend.PNG), ![Noise](Noise.PNG)
+
 - The next step is to create a new dataframe, with the creative name of “cad_jpy_df2”.   cad_jpy_df2 has three columns (and an index).   It keeps the price column from the first dataframe and adds the calculated (from previous step) trend and noise columns.
 - Analyzing the time series from 2015 to present, using cad_jpy_df2 dataframe, and observing from the plot, we see that:
   - From 2015 to late 2016, the ¥ strengthened materially.  
